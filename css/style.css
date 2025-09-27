@@ -1,0 +1,14 @@
+body {
+    background-color: lightgreen;
+}
+body {
+     display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  color: white;
+  background: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
