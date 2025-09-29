@@ -1,4 +1,6 @@
-
+body {
+    background-color: lightgreen;
+}
 body {
      display: block;
   margin: 20px auto;
@@ -9,5 +11,4 @@ body {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  text-align: center;
 }
