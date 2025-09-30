@@ -37,21 +37,25 @@ body {
         color: white;/*A lighter blue color*/
         margin-bottom: 50px;
     }
-    /*styling the button*/
-    .ctn{
-        background-color: white;/*A vibrant gold */
-        color: red;
-        font-weight: bold;
-        padding: 12px 30px;
-        border: none;
-        border-radius: 50px;/*Fully rounded button*/
-        cursor: pointer;/*Makes it look clickable*/
-        transition: background-color 0.3s;/*Smooth color change on hover*/
+    /*styling the buttons*/
+    .my-button {
+    background-color: gold; /* red */
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 0.1px;
+    cursor: pointer;
+    border-radius: 8px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
     }
-    .ctn-button:hover{
-        background-color: blue;/*Slightly darker on hover*/
-    }
+    .my-button:hover {
     /*styling the container div for the cards*/
+    background-color: lightgreen;/* Darker gold on hover */
+    }
     .card-container{
         display: flex;/*Key to laying items side-by-side*/
         gap: 20px;/*Space between the Two cards*/
@@ -134,7 +138,7 @@ body {
     
     /* Makes the navigation bar stay at the top of the screen */
         position: scroll;
-        top: 100px;
+        top: 0;
         z-index: 1000; /* Ensures it stays above other content */
         box-shadow: 0 2px 4px rgba(red, green, blue, alpha)
     }
@@ -196,6 +200,7 @@ body {
         gap: 15px;
         max-width: 400px;
         margin: 0 auto;
+        background-position: center;
     }
     .form-input {
         padding: 15px 20px;
@@ -219,7 +224,7 @@ body {
         background-color: white; /* A nice green color */
         color: black;
         font-weight: bold;
-        padding: 15px 30px;
+        padding: 15px 70px;
         border: none;
         border-radius: 8px;
         cursor: pointer;
