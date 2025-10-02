@@ -1,70 +1,237 @@
 body {
-        font-family: Arial, sans-serif;
+    font-family: Arial,sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    background-color: lightgreen;
+    padding: 40px;
+    margin-top: 30px;
+    border-radius: 12px;
+    box-shadow: 0.4px 6px rgba(red, green, blue, alpha);
+    background-image: url(971.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    }
+
+    /*Styling the main countainer div*/
+    .hero-section{
+        background-color: #1a202c;/*Deep Charcoal Background*/
+        color: blue;/*Light text for contrast*/
+        padding: 80px 40px;/*lots of internal space*/
+        text-align: center;/*Center everything inside*/
+        border-radius: 16px;/*Rounded corners for a modern look*/
+    }
+    /*Styling the main title font*/
+    .hero-title {
+        font-size: 4rem;/*Very large font size*/
+        font-weight: 500;/*Extra bold weight*/
+        margin-bottom: 50px;
+        font-family: Georgia,serif;/*Use a strong serif font*/
+    }
+    /*styling the subtitle font*/
+    .hero-subtitle{
+        font-size: 2rem;
+        font-weight: 300;/*Light weight for a subtitle look*/
+        color: white;/*A lighter blue color*/
+        margin-bottom: 50px;
+    }
+    /*styling the buttons*/
+    .my-button {
+    background-color: gold; /* red */
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 0.1px;
+    cursor: pointer;
+    border-radius: 8px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+    }
+    .my-button:hover {
+    /*styling the container div for the cards*/
+    background-color: lightgreen;/* Darker gold on hover */
+    }
+    .card-container{
+        display: flex;/*Key to laying items side-by-side*/
+        gap: 20px;/*Space between the Two cards*/
+        padding: 40px 0; 
+        margin-top: 50px;
+    }
+    /*styling the individual card divs*/
+    .feature-card{
+        flex: 1;/*Tell each card to take the equal amount of space*/
+        background-color: darkblue;
+        padding: 20px;
+        border-radius: 30px;
+        box-shadow: 0 10px 15px rgba(red, green, blue, alpha);/*soft shadow*/
+        transition: transform 0.3s;
+    }
+    .feature-card:hover{
+          transform: translateY(-5px); /* Moves the card up slightly on hover */
+    }
+    .feature-card h3{
+            font-size: 1.5rem;
+        color: white; /* Match the color from the hero section */
+        margin-bottom: 10px;
+    }
+    .feature-card p{
+        font-size: 1rem;
+        color: white;
+    }
+    /*Mak2ing it responsive:on small screens,cards stack vertically*/
+    @media (max-width:768px){
+        .card-container{
+            flex-direction: column; /* Change the direction to stack them vertically */
+        }
+    }
+    /* Styling the footer div itself */
+    .site-footer{
+        background-color: none;/* Dark, corporate black */
+        color: white;
+        padding: 30px 20px;
+        text-align: center;
+        margin-top: 60px; /* Space it out from the content above*/
+    }
+    /* Styling the content div inside the footer using flex for spacing */
+    .footer-content{
+        display: flex;
+        justify-content: center; /* Evenly space elements in the center */
+        align-items: center; /* Vertically align items */
+        align-items: center; /* Vertically align items */
+        gap: 60px; /* Space between the links and text */
+    }
+    .site-footer a {
+        color: white;/* Light blue color for links */
+        text-decoration: none;/* Remove the default underline */
+        font-size: 0.9rem;
+        transition: color 0.3s;
+    }
+    .site-footer a:hover{
+        color: white;/* Bright white on hover */
+    }
+    .site-footer p {
+        font-size: 0.9rem;
+        font-weight: 300;
+    }
+    /* Adjusting the footer for small mobile screens */
+    @media (max-width: 600px) {
+        .footer-content {
+            flex-direction: column;/* Stack all items when the screen is small */
+            gap: 10px;
+        }
+    }
+    /* --- Exercise 6: Sticky Navigation Bar --- */
+    .main-nav {
+        background-color: none;
+        border-bottom: 1px solid none;
+        padding: 0px 0px;
+        display: flex;
+    /* Centers items vertically within the nav bar */
+        align-items: center; 
+    /* Pushes the brand to the left and links to the right */
+        justify-content: space-between; 
+    
+    /* Makes the navigation bar stay at the top of the screen */
+        position: scroll;
+        top: 0;
+        z-index: 1000; /* Ensures it stays above other content */
+        box-shadow: 0 2px 4px rgba(red, green, blue, alpha)
+    }
+    .nav-brand {
+        font-size: 1.5rem;
+        font-weight: 900;
+        color: white;
+    }
+    /* Remove default list styles and align links horizontally */
+    .nav-links {
+        list-style-type: none; /* Removes bullet points */
         margin: 0;
         padding: 0;
-        background-color: black;
-        color: white;
-    }
-
-    header {
-        text-align: none;
-        background: none;
-        padding: 10px 25px;
-    }
-    h1 {
-        font-size: 2.5rem;
-        color: white;
-        padding: 0.1px 5px;
-    }
-
-    h2 {
-        font-size: 1.8rem;
-        color: white;
-    }
-
-    .project {
-        color: white;
-        padding: 8px;
-    }
-    .project{
-        color: white;
-    }
-    footer {
-        text-align: center;
-        padding: 10px;
-        background: none;
-    }
-    /* Navigation Menu Styles */
-    .nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    .nav-links {
-      display: flex;
-      gap: 2rem;
+        display: flex; /* Arranges the list items in a row */
+        gap: 40px;
     }
 
     .nav-links a {
-      color: blue;
-      text-decoration: none;
-      font-weight: bold;
+        text-decoration: none; /* Removes underline from links */
+        color: lightblue;
+        font-weight: 500;
+        padding: 5px 0;
+        transition: color 0.3s, border-bottom 0.3s;
     }
-     /* Mobile Styles */
-    @media (max-width: 768px){
-    .nav-links {
+
+    /* Style the link on hover for interactivity */
+    .nav-links a:hover {
+        color: blue;
+        border-bottom: 2px solid;
+    }
+
+    /* Optional: Style links that have been visited */
+    .nav-links a:visited {
+        color: lightblue;
+    }
+    .form-panel {
+        position: relative;
+        padding: 1px 1px;
+        border-radius: 9px;
+        overflow: hidden; /* Ensures background image stays inside rounded corners */
+        text-align: center;
+        box-shadow: 0px 0px rgba(0, 0, 0, 0.1);
+        margin-bottom: 50px;
+    }
+    /* Overlay to darken the background image, making text readable */
+    .form-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0%;
+        height: 0%;
+        background-color: rgba(0, 0, 0, 0.65); /* Black with 65% opacity */
+        z-index: 1; /* Puts the overlay beneath the form content */
+    }
+    .newsletter-form {
+        position: relative;
+        z-index: 2; /* Ensures the form content is above the overlay */
         display: flex;
         flex-direction: column;
-        background-color: black;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        width: 100%;
-        text-align: center;
-        padding: 1rem 0;
+        gap: 15px;
+        max-width: 400px;
+        margin: 0 auto;
     }
-    .nav-links.active {
-        display: flex;
+    .form-input {
+        padding: 15px 20px;
+        border: 2px solid none;
+        border-radius: 8px;
+        font-size: 1rem;
+        transition: border-color 0.3s, box-shadow 0.3s;
     }
-}
+    /* IMPORTANT: Styling the input when it has focus */
+    .form-input:focus {
+        border-color: black; /* Highlight border with brand color */
+        outline: none; /* Removes the default blue outline */
+        box-shadow: 0 0 0 4px rgba(76, 81, 191, 0.2); /* Subtle glow effect */
+    }
+    /* Customizing the placeholder text */
+    .form-input::placeholder {
+        color: black;
+        font-style: italic;
+    }
+    .form-submit-button {
+        background-color: white; /* A nice green color */
+        color: black;
+        font-weight: bold;
+        padding: 15px 70px;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        font-size: 1.1rem;
+        margin-top: 10px;
+    }
+    .form-submit-button:hover {
+        background-color: blue;
+    }
