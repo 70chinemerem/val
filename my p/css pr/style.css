@@ -126,7 +126,7 @@ body {
         }
     }
     /* --- Exercise 6: Sticky Navigation Bar --- */
-.main-nav {
+    .main-nav {
         background-color: none;
         border-bottom: 1px solid none;
         padding: 0px 0px;
@@ -153,20 +153,21 @@ body {
         margin: 0;
         padding: 0;
         display: flex; /* Arranges the list items in a row */
-        gap: 25px;
+        gap: 40px;
     }
+
     .nav-links a {
         text-decoration: none; /* Removes underline from links */
         color: lightblue;
         font-weight: 500;
-        padding: 5px 10px;
+        padding: 5px 0;
         transition: color 0.3s, border-bottom 0.3s;
     }
 
     /* Style the link on hover for interactivity */
     .nav-links a:hover {
-        color: lightblue;
-        border-bottom: 2px solid #4c51bf;
+        color: blue;
+        border-bottom: 2px solid;
     }
 
     /* Optional: Style links that have been visited */
@@ -180,13 +181,13 @@ body {
         overflow: hidden; /* Ensures background image stays inside rounded corners */
         text-align: center;
         box-shadow: 0px 0px rgba(0, 0, 0, 0.1);
-        margin-bottom: 80px;
+        margin-bottom: 50px;
     }
     /* Overlay to darken the background image, making text readable */
     .form-overlay {
         position: absolute;
         top: 0;
-            left: 0;
+        left: 0;
         width: 0%;
         height: 0%;
         background-color: rgba(0, 0, 0, 0.65); /* Black with 65% opacity */
@@ -200,7 +201,6 @@ body {
         gap: 15px;
         max-width: 400px;
         margin: 0 auto;
-        background-position: center;
     }
     .form-input {
         padding: 15px 20px;
